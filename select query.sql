@@ -7,6 +7,7 @@ select * from payment ;
 
 select * from product where id=10;
 
+select * from category where id= 15 and name ='books';
 
 
 
