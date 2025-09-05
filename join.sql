@@ -32,3 +32,20 @@ CROSS JOIN
     Category AS c
 ORDER BY
     p.product_name, c.category_name;
+
+
+SELECT
+    c.category_name,
+    COUNT(p.product_id) AS number_of_products
+FROM
+    Category AS c
+INNER JOIN
+    Product AS p ON c.category_id = p.category_id
+GROUP BY
+    c.category_name
+ORDER BY
+    number_of_products DESC;
+
+
+
+
