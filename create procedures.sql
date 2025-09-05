@@ -6,3 +6,19 @@ end;
 
 exec a1;
 
+create procedure b1
+as
+begin
+
+select category_id ,category_name from category;
+end;
+
+exec b1;
+
+
+
+
+
+
+
+
